@@ -29,9 +29,9 @@ public class Piece {
 			}
 		} else {
 			if(isKing) {
-				return "W";
+				return "R";
 			} else {
-				return "w";
+				return "r";
 			}
 		}
 	}

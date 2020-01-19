@@ -1,5 +1,7 @@
 package checkers;
 
+import java.util.Scanner;
+
 public class Checkers {
 	private Board board;
 
@@ -21,10 +23,14 @@ public class Checkers {
 	}
 	
 	private void playerTurn(boolean isBlack) {
+		Scanner scanner = new Scanner(System.in);
 		if(isBlack) {
-			System.out.println("PLAYER 1, CHOOSE A BLACK PIECE: ");
+			System.out.print("PLAYER 1, CHOOSE A BLACK PIECE: ");
 		} else {
-			System.out.println("PLAYER 2, CHOOSE A WHITE PIECE: ");
+			System.out.print("PLAYER 2, CHOOSE A RED PIECE: ");
+		}
+		while(true) {
+			break;
 		}
 	}
 	

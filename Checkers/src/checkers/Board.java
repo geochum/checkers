@@ -4,6 +4,7 @@ public class Board {
 	private Square[][] board;
 	private final int BOARD_SIZE = 8;
 	private final int NUM_OF_PIECES = 12;
+	private final int SCALE_FACTOR = 6;
 	
 	public Board() {
 		board = new Square[BOARD_SIZE][BOARD_SIZE];
@@ -27,8 +28,8 @@ public class Board {
 	}
 	
 	public void displayBoard() {
-		for(int r = 0; r < BOARD_SIZE; r++) {
-			for(int c = 0; c < BOARD_SIZE; c++) {
+		for(int r = 0; r <= SCALE_FACTOR * BOARD_SIZE; r++) {
+			for(int c = 0; c <= SCALE_FACTOR * BOARD_SIZE; c++) {
 				if(board[r][c].hasPiece()) {
 					System.out.print(board[r][c].getPiece() + "\t");
 				} else {
