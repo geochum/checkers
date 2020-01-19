@@ -8,11 +8,24 @@ public class Checkers {
 		checkers.play();
 	}
 	
-	public void play() {
-		board.displayBoard();
-	}
-	
 	public Checkers() {
 		board = new Board();
 	}
+	
+	public void play() {
+		board.displayBoard();
+		while(true) {
+			playerTurn(true);
+			break;
+		}
+	}
+	
+	private void playerTurn(boolean isBlack) {
+		if(isBlack) {
+			System.out.println("PLAYER 1, CHOOSE A BLACK PIECE: ");
+		} else {
+			System.out.println("PLAYER 2, CHOOSE A WHITE PIECE: ");
+		}
+	}
+	
 }
