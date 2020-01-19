@@ -15,6 +15,7 @@ public class Checkers {
 	}
 	
 	public void play() {
+		System.out.println("WELCOME TO CHECKERS!");
 		board.displayBoard();
 		while(true) {
 			playerTurn(true);
@@ -29,8 +30,8 @@ public class Checkers {
 		} else {
 			System.out.print("PLAYER 2, CHOOSE A RED PIECE: ");
 		}
-		while(true) {
-			break;
+		while(scanner.hasNext()) {
+			scanner.next();
 		}
 	}
 	
