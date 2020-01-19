@@ -20,4 +20,19 @@ public class Piece {
 	public void setKing(boolean isKing) {
 		this.isKing = isKing;
 	}
+	public String toString() {
+		if(isBlack) {
+			if(isKing) {
+				return "B";
+			} else {
+				return "b";
+			}
+		} else {
+			if(isKing) {
+				return "W";
+			} else {
+				return "w";
+			}
+		}
+	}
 }
